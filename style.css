@@ -1,0 +1,147 @@
+body {
+  background-color: white;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+}
+
+.button {
+  border: none;
+  padding: 0.625em;
+  border-radius: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.button:hover {
+  background-color: #d3a6ff; /* Light purple on hover */
+  filter: brightness(1.1);
+}
+
+.button:active {
+  transform: translateY(2px);
+}
+
+.person-selector {
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+  margin: 3em auto 1em;
+  max-width: 40em;
+}
+
+.person-selector-button {
+  width: 100%;
+  background-color: #a05bbd; /* Light purple */
+  color: #fff;
+  font-size: 1.1em;
+  border-radius: 1em;
+  padding: 1em;
+  box-shadow: 0 0 10px rgba(160, 91, 189, 0.5);
+  transition: background-color 0.3s;
+}
+
+.active-person {
+  background: #9c4eae; /* Darker purple for active state */
+  box-shadow: 0 0 1em rgba(156, 78, 174, 0.7);
+}
+
+.chat-container {
+  background: #f9f9f9; /* Light background for the chat */
+  font-family: 'Roboto', sans-serif;
+  border-radius: 1em;
+  padding: 2em;
+  margin: auto;
+  max-width: 37.5em;
+  height: auto; /* Change height to auto */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.chat-header {
+  margin-bottom: 1em;
+  color: #6a0dad; /* Purple header color */
+  text-align: center;
+}
+
+.chat-header h2 {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.chat-messages {
+  padding: 1em;
+  border-radius: 1em;
+  background-color: #eaeaea; /* Light gray for message area */
+  overflow: hidden; /* Hide overflow */
+}
+
+.message {
+  padding: 1em;
+  border-radius: 1em;
+  margin-bottom: 0.625em;
+  display: flex;
+  flex-direction: column;
+}
+
+.message-sender {
+  font-weight: bold;
+  margin-bottom: 0.5em;
+}
+
+.message-text {
+  font-size: 1em;
+  margin-bottom: 0.5em;
+  word-wrap: break-word;
+}
+
+.message-timestamp {
+  font-size: 0.75em;
+  text-align: right;
+}
+
+.blue-bg {
+  background-color: #8e7cc3; /* Light purple for John */
+  border-radius: 1em;
+}
+
+.gray-bg {
+  background-color: #b0b0b0; /* Gray for Jane */
+  border-radius: 1em;
+}
+
+.chat-input-form {
+  display: flex;
+  align-items: center;
+  margin-top: 2em;
+  gap: 0.625em;
+}
+
+.chat-input {
+  padding: 1em;
+  border: none;
+  border-radius: 1em;
+  background-color: #f3e5f5; /* Light purple input */
+  color: #333;
+  font-size: 1em;
+  flex-grow: 1;
+  transition: border 0.3s;
+}
+
+.chat-input:focus {
+  outline: none;
+  border: 2px solid #6a0dad; /* Dark purple on focus */
+}
+
+.send-button {
+  background-color: #6a0dad; /* Dark purple for send button */
+  color: #fff;
+  font-size: 1em;
+  font-weight: bold;
+  border-radius: 1em;
+}
+
+.clear-chat-button {
+  display: block;
+  margin: 2.5em auto;
+  background-color: #6a0dad; /* Dark purple for clear button */
+  color: #fff;
+  border-radius: 1em;
+}
